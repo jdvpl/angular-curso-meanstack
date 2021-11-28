@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
+  nombre: any;
+  comentario: any;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  agregarComentario(){
+    console.log(this.nombre);
+    console.log(this.comentario);
   }
 
 }

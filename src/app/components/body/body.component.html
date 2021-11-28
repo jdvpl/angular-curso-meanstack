@@ -52,15 +52,15 @@
       </p>
     </figure>
     <div class="media-content">
-      <input class="input is-normal" type="text" placeholder="Nombre">
+      <input class="input is-normal" type="text" [(ngModel)]="nombre" (ngModelChange)="nombre" placeholder="Nombre">
       <div class="field mt-2">
         <p class="control">
-          <textarea class="textarea" placeholder="Agrega un comentario"></textarea>
+          <textarea class="textarea" placeholder="Agrega un comentario" [(ngModel)]="comentario" (ngModelChange)="comentario"></textarea>
         </p>
       </div>
       <div class="field">
         <p class="control">
-          <button class="button is-info">Enviar</button>
+          <button class="button is-info" (click)="agregarComentario()">Enviar</button>
         </p>
       </div>
     </div>
