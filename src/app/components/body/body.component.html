@@ -25,7 +25,7 @@
 
   <!-- comentarios -->
 
-  <article class="media mt-5">
+  <article class="media mt-5" *ngFor="let item of comentarios">
     <figure class="media-left">
       <p class="image is-64x64">
         <img src="https://bulma.io/images/placeholders/128x128.png">
@@ -34,17 +34,17 @@
     <div class="media-content">
       <div class="content">
         <p>
-          <strong>Barbara Middleton</strong>
+          <strong>{{item.nombre}} </strong> <small>{{item.alias}}</small>
           <br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.
+          {{item.comentario}}
           <br>
           <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
         </p>
       </div>
-
     </div>
   </article>
 
+  <!-- formualrio -->
   <article class="media">
     <figure class="media-left">
       <p class="image is-64x64">

@@ -64,3 +64,18 @@ eliminar(inidice: any){
 nombre: any;
 <input [(ngModel)]="nombre" (ngModelChange)="nombre" = $event />
 `
+---
+
+###  arreglos
+* `numero: number =6;`
+* `nombre: String= "kakaroto";`
+* `numeros: number[]= [1,2,3,4,52,8];`
+* `nombres: String[]= ["asdf","jiose","jire"];`
+
+### recorrer arreglos
+* `let numeros=[4,2,5,6,7]
+ for (var i=0; i<numeros.length; i++){
+   console.log(this.numeros[i] + ", ")
+ }
+`
+
