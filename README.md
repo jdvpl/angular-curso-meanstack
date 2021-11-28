@@ -12,3 +12,8 @@ este es un proyecto del curso de meanstack udemy  https://www.udemy.com/course/i
 ### Instalar bulma
 * Framework de css
 * `npm i bulma --save`
+
+### Crear componente
+* `ng g c nombreComponente`
+* compoente navbar `ng g c components/navbar`
+
